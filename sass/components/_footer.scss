@@ -1,0 +1,45 @@
+.footer {
+    padding: 10rem 0;
+    background-color: #333;
+
+    &__logo-box {
+        text-align: center;
+    }
+
+    &__logo {
+        height: 15rem;
+    }
+
+    &__navigation {
+        margin: 10rem 0;
+        padding: 2rem 0;
+        border-top: 1px solid #ccc;
+        text-align: center;
+    }
+
+    &__list {
+        font-size: 1.5rem;
+        color: $color-white;
+        list-style: none;
+        padding-left: 1.5rem;
+
+        @include clearfix;
+       
+    }
+
+    &-item {
+        text-decoration: none;
+        color: $color-white;
+        float: left;
+
+        &:not(:last-child) {
+            padding-right: 2rem;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}
